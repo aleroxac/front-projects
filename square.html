@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Square</title>
+    <style>
+        input {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button onClick="square()">Click me</button>
+    <div id="content">
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <button onClick="remover()">Remover</button>
+    </div>
+    <script>
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+        return color;
+        }
+        
+        function square() {
+            var newColor = getRandomColor(); 
+
+            var my_square = document.createElement('div');
+            my_square.setAttribute('class', 'square');
+            my_square.style.backgroundColor = newColor;
+            my_square.style.height = '100px';
+            my_square.style.width = '100px';
+            my_square.style.float = 'left';
+            my_square.style.margin = '10px';
+
+            var containerElement = document.querySelector('#content');
+            containerElement.appendChild(my_square);
+        }
+
+        function adicionar() {
+            var inputValue = document.querySelector('input[name=nome]').value;
+            console.log(newItem);
+            nomes.push(newItem);
+      
+            var newItem = document.createElement('li');
+            items.appendChild(newItem);
+
+            var itemValue = document.createTextNode(inputValue);
+            newItem.appendChild(itemValue);
+
+            document.querySelector('input[name=nome]').value = ""
+        }
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var containerElement = document.querySelector('#content');
+        
+        var lista = document.createElement('ul');
+        containerElement.appendChild(lista)
+
+        var items = document.querySelector('#content ul');
+        for (let i of nomes) {
+            var item = document.createElement('li');
+            items.appendChild(item);
+
+            var itemValue = document.createTextNode(i);
+            item.appendChild(itemValue);
+        }
+
+    </script>
+</body>
+</html>

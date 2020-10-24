@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" placeholder="Insira uma nova tarefa">
+        <button onclick="adicionar()">Adicionar</button>
+        <ul>
+        </ul>
+    </div>
+    <script>
+        var listElement = document.querySelector('#app ul')
+        var inputElement = document.querySelector('#app input')
+        var buttonElement = document.querySelector('#app button')
+
+        var todos = [
+            "Estudar Golang",
+            "Estudar Ansible",
+            "Estudar Javascript"
+        ];
+
+        function handleFunc() {
+            listElement.innerHTML = '';
+            for (let task of todos) {
+                var listItem = document.createElement('li');
+                listElement.appendChild(listItem);
+
+                var itemValue = document.createTextNode(task);
+                listItem.appendChild(itemValue);
+
+                var linkItem = document.createElement('a');
+                listItem.appendChild(linkItem);
+
+                var linkValue = document.createTextNode("Excluir");
+                var itemPosition = todos.indexOf(inputElement.value)
+                linkItem.appendChild(linkValue);
+                linkItem.setAttribute('href', '#');
+                linkItem.setAttribute('onclick', 'remover(' + itemPosition + ')');
+            }
+        }
+
+        
+
+        function adicionar() {
+            handleFunc();
+            if (inputElement.value) {
+                var listItem = document.createElement('li');
+                listElement.appendChild(listItem);
+
+                var itemValue = document.createTextNode(inputElement.value);
+                listItem.appendChild(itemValue);
+
+                var linkItem = document.createElement('a');
+                listItem.appendChild(linkItem);
+
+                var linkValue = document.createTextNode("Excluir");
+                var itemPosition = todos.indexOf(inputElement.value)
+                linkItem.appendChild(linkValue);
+                linkItem.setAttribute('href', '#');
+                linkItem.setAttribute('onclick', 'remover(' + itemPosition + ')');
+
+                todos.push(inputElement.value);
+                inputElement.value = ""
+            }
+        }
+
+        function remover() {
+            todos.splice(itemPosition, 1)
+            handleFunc();
+
+        }
+
+    </script>
+</body>
+</html>

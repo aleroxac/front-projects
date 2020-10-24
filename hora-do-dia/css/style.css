@@ -1,0 +1,36 @@
+body {
+    background: #00c3ff;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 3px #00000069;
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+
+
+footer {
+    color: #ffffff;
+    text-align: center;
+}

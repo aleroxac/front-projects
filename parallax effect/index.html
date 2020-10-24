@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parallax Effect</title>
+</head>
+<body>
+    <section class="hero">
+        <img src="img/rick.png" alt="rick-sanchez" class="parallax">
+        <div class="text-wrapper">
+            <h1 class="headline">"Ninguém existe por um propósito. Ninguém pertence a lugar nenhum"</h1>
+            <h2 class="sub-headline">Todo mundo vai morrer!</h2>
+        </div>
+    </section>
+    <div class="overflow"></div>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            const parallax = document.querySelector('.parallax');
+            let scrollPosition = window.pageYOffset;
+            parallax.style.transform = 'translateY(' + scrollPosition * .5 + 'px)'; 
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Augusto Portifolio</title>
+</head>
+<body>
+    <div class="container navbar">
+        <header>
+            <div class="lgo">
+                <h1>Augusto</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Projetos</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class="container main-info-section">
+        <div class="text">
+            <h1>
+                <span class="m-left">O</span>
+                <span class="m-left">l</span>
+                <span class="m-left">á</span>
+                <span class="m-left">,</span>
+                <br>
+                <span class="m-left">M</span>
+                <span class="m-left">e</span>
+                <span>c</span>
+                <span class="m-left">h</span>
+                <span class="m-left">a</span>
+                <span class="m-left">m</span>
+                <span class="m-left">o</span>
+                <span class="name">A</span>
+                <span class="m-left name">u</span>
+                <span class="m-left name">g</span>
+                <span class="m-left name">u</span>
+                <span class="m-left name">s</span>
+                <span class="m-left name">t</span>
+                <span class="m-left name">o</span>
+                <span class="name">C</span>
+                <span class="m-left name">a</span>
+                <span class="m-left name">r</span>
+                <span class="m-left name">d</span>
+                <span class="m-left name">o</span>
+                <span class="m-left name">s</span>
+                <span class="m-left name">o</span>
+                <br>
+                <span>A</span>
+                <span class="m-left">n</span>
+                <span class="m-left">a</span>
+                <span class="m-left">l</span>
+                <span class="m-left">i</span>
+                <span class="m-left">s</span>
+                <span class="m-left">t</span>
+                <span class="m-left">a</span>
+                <span >d</span>
+                <span class="m-left">e</span>
+                <span >I</span>
+                <span class="m-left">n</span>
+                <span class="m-left">f</span>
+                <span class="m-left">r</span>
+                <span class="m-left">a</span>
+                <span class="m-left">e</span>
+                <span class="m-left">s</span>
+                <span class="m-left">t</span>
+                <span class="m-left">r</span>
+                <span class="m-left">u</span>
+                <span class="m-left">t</span>
+                <span class="m-left">u</span>
+                <span class="m-left">r</span>
+                <span class="m-left">a</span>
+            </h1>
+
+            <p>Docker / shell / Python</p>
+            <a href="#contact">Contate-me</a>
+        </div>
+
+        <div class="profile-image">
+            <img src="img/profile-image.png" alt="profile-image">
+        </div>
+    </div>
+        
+
+   
+
+    <div class="container about" id="about">
+        <h1>Sobre</h1>
+        <div class="about-me-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum deserunt maxime ut a</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum deserunt maxime ut a</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum deserunt maxime ut a</p>
+        </div>
+    </div>
+
+
+    <div class="container skills" id="skills">
+        <h1>Skills</h1>
+        <p class="skills-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ducimus perspiciatis fugit nostrum placeat accusantium officiis ullam dignissimos, impedit, sunt repellendus delectus saepe laborum tempora ipsum eius voluptatum eaque quisquam.</p>
+        <div class="docker">
+            <div class="tag-docker">
+                <p>Docker</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-docker"></div>
+            </div>
+        </div>
+        <div class="shell">
+            <div class="tag-shell">
+                <p>Shell Script</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-shell"></div>
+            </div>
+        </div>
+        <div class="python">
+            <div class="tag-python">
+                <p>Python</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-python"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container work" id="work">
+        <h1>Projetos</h1>
+        <div class="work-category">
+            <button id="category-docker" class="active" onclick="showRequiredCategory(this)">Docker</button>
+            <button id="category-shell" onclick="showRequiredCategory(this)">Shell Script</button>
+            <button id="category-python" onclick="showRequiredCategory(this)">Python</button>
+        </div>
+
+        <div class="category-docker showCategory">
+            <a href="#"><img src="img/p1-docker.jpg" alt="p1-docker"></a>
+            <a href="#"><img src="img/p2-docker.jpg" alt="p2-docker"></a>
+            <a href="#"><img src="img/p3-docker.png" alt="p3-docker"></a>
+            <a href="#"><img src="img/p4-docker.png" alt="p4-docker"></a>
+            <a href="#"><img src="img/p5-docker.png" alt="p5-docker"></a>
+        </div>
+        <div class="category-shell hideCategory">
+            <a href="#"><img src="img/p-bash.png" alt="p1-shell"></a>
+            <a href="#"><img src="img/p-bash.png" alt="p2-shell"></a>
+            <a href="#"><img src="img/p-bash.png" alt="p3-shell"></a>
+        </div>
+        <div class="category-python hideCategory">
+            <a href="#"><img src="img/p-python.png" alt="p1-python"></a>
+            <a href="#"><img src="img/p-python.png" alt="p2-python"></a>
+            <a href="#"><img src="img/p-python.png" alt="p3-python"></a>
+            <a href="#"><img src="img/p-python.png" alt="p4-python"></a>
+        </div>
+        
+    </div>
+
+
+    <div class="container contact" id="contact">
+        <h1>Contato</h1>
+        <form>
+            <input type="text" name="name" placeholder="Nome inteiro">
+            <input type="email" placeholder="Email">
+            <input type="email" placeholder="acardoso.ti@gmail.com" disabled>
+            <textarea name="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <input type="submit">
+        </form>
+    </div>
+
+
+    <footer>
+        <hr>
+        <p>2020 Copyright. Todos os direitos reservados</p>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

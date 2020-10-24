@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.headline {
+    font-size: 3rem;
+    font-family: cursive;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: .4;
+    margin-bottom: 1rem;
+    margin-right: 50rem;
+}
+
+.headline::first-letter {
+    font-size: 6rem;
+}
+
+.sub-headline {
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    color: rgb(134, 233, 247);
+    text-shadow: 2px 2px 2px rgb(0, 148, 141);
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overflow {
+    height: 200vh;
+}
