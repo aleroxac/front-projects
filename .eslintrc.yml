@@ -42,4 +42,6 @@ rules:
         - todo
         - fixme
   prefer-promise-reject-errors: error
-  semi: never
+  semi:
+    - error
+    - always
