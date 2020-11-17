@@ -44,4 +44,4 @@ rules:
   prefer-promise-reject-errors: error
   semi:
     - error
-    - always
+    - never
