@@ -1,3 +1,5 @@
+/*global Power4, ScrollMagic*/
+
 const spans = document.querySelectorAll('h1 span')
 spans.forEach(span => span.addEventListener('mouseover', function(e) {
     span.classList.add('animated', 'rubbterBand')
